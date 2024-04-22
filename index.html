@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect Page</title>
+  <style>
+    body {
+      @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap');
+      font-family: 'Be Vietnam Pro', sans-serif;
+      overflow: hidden;
+    }
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  border: 8px solid #CBC3E3;
+  border-top: 8px solid #5D3FD3;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  </style>
+  <script>
+    // Function to redirect after 3 seconds
+setTimeout(function() {
+  window.location.href = "/static/";
+}, 3000); // 3000 milliseconds = 3 seconds
+
+  </script>
+</head>
+<body style="background: #2B1C3D;">
+  <center>
+  <h1>Loading...</h1>
+  </center>
+  <div class="loader-container">
+  <div class="loader"></div>
+</div>
+</body>
+     <script src="/static/js/autoab.js"></script>
+</html>
